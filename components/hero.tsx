@@ -15,8 +15,8 @@ export function Hero() {
       </div>
 
       {/* Tagline */}
-      <h1 className="font-serif text-2xl md:text-3xl text-foreground text-center mt-4 italic tracking-wide">
-        Élégance & infinie gourmandise
+      <h1 className="font-serif text-2xl md:text-3xl text-foreground text-center mt-4 italic tracking-wide text-balance">
+        Elegance & infinie gourmandise
       </h1>
     </section>
   )

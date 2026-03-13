@@ -2,8 +2,8 @@ export function AboutSection() {
   return (
     <section id="about" className="px-4 md:px-6 py-16">
       <div className="max-w-3xl mx-auto">
-        <div className="bg-card backdrop-blur-md border border-border rounded-2xl p-8 md:p-12 shadow-lg text-center">
-          <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-6 tracking-wide">
+        <div className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl p-8 md:p-12 shadow-lg text-center">
+          <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-6 tracking-wide italic">
             À propos
           </h2>
           <div className="space-y-4 text-foreground/90 leading-relaxed">

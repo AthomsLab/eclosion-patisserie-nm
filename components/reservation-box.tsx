@@ -30,8 +30,8 @@ export function ReservationBox() {
   return (
     <section className="px-4 md:px-6 py-8">
       <div className="max-w-xl mx-auto">
-        <div className="bg-card backdrop-blur-md border border-border rounded-2xl p-6 md:p-8 shadow-lg">
-          <h2 className="text-foreground text-center text-lg md:text-xl mb-6 tracking-wide">
+        <div className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl p-6 md:p-8 shadow-lg">
+          <h2 className="font-serif text-foreground text-center text-lg md:text-xl mb-6 tracking-wide italic">
             Réservez votre créneau de retrait
           </h2>
 
@@ -43,7 +43,7 @@ export function ReservationBox() {
                 onClick={() => setSelectedDate(index)}
                 className={`flex flex-col items-center justify-center w-12 h-14 md:w-14 md:h-16 rounded-lg transition-all ${
                   selectedDate === index
-                    ? "bg-primary text-primary-foreground"
+                    ? "bg-[#b89a6a] text-white"
                     : "bg-white/30 text-foreground hover:bg-white/50"
                 }`}
               >
@@ -61,7 +61,7 @@ export function ReservationBox() {
                 onClick={() => setSelectedTime(time)}
                 className={`px-4 py-2 rounded-lg text-sm transition-all ${
                   selectedTime === time
-                    ? "bg-primary text-primary-foreground"
+                    ? "bg-[#b89a6a] text-white"
                     : "bg-white/30 text-foreground hover:bg-white/50"
                 }`}
               >
@@ -74,7 +74,7 @@ export function ReservationBox() {
           <div className="flex justify-center">
             <button
               onClick={handleValidate}
-              className="bg-primary text-primary-foreground px-10 py-3 rounded-full text-sm tracking-wide hover:bg-[#c4a07f] transition-colors"
+              className="bg-[#b89a6a] text-white px-10 py-3 rounded-full text-sm tracking-wide hover:bg-primary transition-colors"
             >
               Valider
             </button>
@@ -91,10 +91,10 @@ export function ReservationBox() {
 
         {/* Info Text */}
         <div className="text-center mt-8">
-          <p className="text-foreground text-lg mb-4 tracking-wide">
+          <p className="font-serif text-foreground text-lg mb-4 tracking-wide italic">
             Commandes exclusivement sur réservation
           </p>
-          <button className="bg-primary/80 text-primary-foreground px-8 py-3 rounded-full text-sm tracking-wide hover:bg-primary transition-colors">
+          <button className="bg-[#b89a6a] text-white px-8 py-3 rounded-full text-sm tracking-wide hover:bg-primary transition-colors">
             En savoir plus
           </button>
         </div>

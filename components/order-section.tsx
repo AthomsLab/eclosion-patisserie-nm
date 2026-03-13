@@ -33,11 +33,11 @@ export function OrderSection() {
   return (
     <section id="order" className="px-4 md:px-6 py-16">
       <div className="max-w-3xl mx-auto">
-        <h2 className="font-serif text-2xl md:text-3xl text-foreground text-center mb-12 tracking-wide">
+        <h2 className="font-serif text-2xl md:text-3xl text-foreground text-center mb-12 tracking-wide italic">
           Commander
         </h2>
-        <div className="bg-card backdrop-blur-md border border-border rounded-2xl p-8 shadow-lg">
-          <h3 className="font-serif text-xl text-foreground mb-6 text-center">
+        <div className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl p-8 shadow-lg">
+          <h3 className="text-xl text-foreground mb-6 text-center font-medium">
             Sélectionnez vos pâtisseries
           </h3>
           <div className="grid sm:grid-cols-2 gap-3 mb-8">
@@ -47,7 +47,7 @@ export function OrderSection() {
                 onClick={() => toggleProduct(product.id)}
                 className={`flex items-center justify-between p-4 rounded-xl transition-all ${
                   selectedProducts.includes(product.id)
-                    ? "bg-primary text-primary-foreground"
+                    ? "bg-[#b89a6a] text-white"
                     : "bg-white/30 text-foreground hover:bg-white/50"
                 }`}
               >
@@ -60,7 +60,7 @@ export function OrderSection() {
             <button
               onClick={handleOrder}
               disabled={selectedProducts.length === 0}
-              className="bg-primary text-primary-foreground px-10 py-3 rounded-full text-sm tracking-wide hover:bg-[#c4a07f] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="bg-[#b89a6a] text-white px-10 py-3 rounded-full text-sm tracking-wide hover:bg-primary transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               Valider la commande
             </button>

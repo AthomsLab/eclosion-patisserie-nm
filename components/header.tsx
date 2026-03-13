@@ -48,7 +48,7 @@ export function Header() {
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className="bg-primary text-primary-foreground px-6 py-2 rounded-full text-sm tracking-wide hover:bg-[#c4a07f] transition-colors"
+                  className="bg-[#b89a6a] text-white px-6 py-2 rounded-full text-sm tracking-wide hover:bg-primary transition-colors"
                 >
                   {item.label}
                 </button>
@@ -83,7 +83,7 @@ export function Header() {
                   <button
                     key={item.href}
                     onClick={() => scrollToSection(item.href)}
-                    className="bg-primary text-primary-foreground px-6 py-2 rounded-full text-sm tracking-wide hover:bg-[#c4a07f] transition-colors w-fit"
+                    className="bg-[#b89a6a] text-white px-6 py-2 rounded-full text-sm tracking-wide hover:bg-primary transition-colors w-fit"
                   >
                     {item.label}
                   </button>
