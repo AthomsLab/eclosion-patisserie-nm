@@ -22,14 +22,14 @@ export function HowToOrderSection() {
   return (
     <section id="how-to-order" className="px-4 md:px-6 py-16">
       <div className="max-w-4xl mx-auto">
-        <h2 className="font-serif text-2xl md:text-3xl text-foreground text-center mb-12 tracking-wide italic">
+        <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12 tracking-wide">
           Comment commander
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
           {steps.map((step, index) => (
             <div
               key={index}
-              className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl p-6 text-center shadow-lg"
+              className="bg-white/10 border border-white/20 rounded-2xl p-6 text-center shadow-lg"
             >
               <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
                 <step.icon size={24} strokeWidth={1.5} className="text-primary" />

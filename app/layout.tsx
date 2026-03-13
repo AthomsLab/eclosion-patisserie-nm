@@ -1,16 +1,16 @@
 import type { Metadata } from 'next'
-import { Sofia, Playfair_Display_SC } from 'next/font/google'
+import { Tangerine, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const sofia = Sofia({ 
-  weight: '400',
+const tangerine = Tangerine({ 
+  weight: ['400', '700'],
   subsets: ['latin'],
-  variable: '--font-sofia',
+  variable: '--font-tangerine',
 })
 
-const playfair = Playfair_Display_SC({ 
-  weight: ['400', '700'],
+const playfair = Playfair_Display({ 
+  weight: ['400', '500', '600'],
   subsets: ['latin'],
   variable: '--font-playfair',
 })
@@ -44,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="fr" className={`${sofia.variable} ${playfair.variable}`}>
+    <html lang="fr" className={`${tangerine.variable} ${playfair.variable}`}>
       <body className="font-sans antialiased">
         {children}
         <Analytics />

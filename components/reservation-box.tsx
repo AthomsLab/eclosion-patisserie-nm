@@ -30,8 +30,8 @@ export function ReservationBox() {
   return (
     <section className="px-4 md:px-6 py-8">
       <div className="max-w-xl mx-auto">
-        <div className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl p-6 md:p-8 shadow-lg">
-          <h2 className="font-serif text-foreground text-center text-lg md:text-xl mb-6 tracking-wide italic">
+        <div className="bg-white/10 border border-white/20 rounded-2xl p-6 md:p-8 shadow-lg">
+          <h2 className="font-serif text-foreground text-center text-2xl md:text-3xl mb-6 tracking-wide">
             Réservez votre créneau de retrait
           </h2>
 
@@ -91,7 +91,7 @@ export function ReservationBox() {
 
         {/* Info Text */}
         <div className="text-center mt-8">
-          <p className="font-serif text-foreground text-lg mb-4 tracking-wide italic">
+          <p className="font-serif text-foreground text-2xl md:text-3xl mb-4 tracking-wide">
             Commandes exclusivement sur réservation
           </p>
           <button className="bg-[#b89a6a] text-white px-8 py-3 rounded-full text-sm tracking-wide hover:bg-primary transition-colors">

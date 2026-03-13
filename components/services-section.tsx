@@ -27,14 +27,14 @@ export function ServicesSection() {
   return (
     <section className="px-4 md:px-6 py-16">
       <div className="max-w-4xl mx-auto">
-        <h2 className="font-serif text-2xl md:text-3xl text-foreground text-center mb-12 tracking-wide italic">
+        <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12 tracking-wide">
           Nos services
         </h2>
         <div className="grid sm:grid-cols-2 gap-6">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl p-6 shadow-lg flex items-start gap-4"
+              className="bg-white/10 border border-white/20 rounded-2xl p-6 shadow-lg flex items-start gap-4"
             >
               <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
                 <service.icon size={20} strokeWidth={1.5} className="text-primary" />

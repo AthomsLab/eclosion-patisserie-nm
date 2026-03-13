@@ -7,6 +7,7 @@ import { ServicesSection } from "@/components/services-section"
 import { ContactSection } from "@/components/contact-section"
 import { OrderSection } from "@/components/order-section"
 import { Footer } from "@/components/footer"
+import { FixedLogo } from "@/components/fixed-logo"
 
 export default function Home() {
   return (
@@ -22,12 +23,16 @@ export default function Home() {
         }}
       />
 
-      {/* Gradient Mask at Top - Content fades under logo */}
+      {/* Fixed Logo - Always visible, overlapping header */}
+      <FixedLogo />
+
+      {/* Gradient Mask at Top - Content fades under logo at ~450px */}
       <div
-        className="fixed top-0 left-0 right-0 h-32 z-30 pointer-events-none"
+        className="fixed top-0 left-0 right-0 z-30 pointer-events-none"
         style={{
+          height: "450px",
           background:
-            "linear-gradient(to bottom, rgba(250, 246, 243, 0.95) 0%, rgba(250, 246, 243, 0.7) 50%, rgba(250, 246, 243, 0) 100%)",
+            "linear-gradient(to bottom, rgba(250, 246, 243, 1) 0%, rgba(250, 246, 243, 0.98) 70%, rgba(250, 246, 243, 0.9) 85%, rgba(250, 246, 243, 0) 100%)",
         }}
       />
 
@@ -35,7 +40,7 @@ export default function Home() {
       <Header />
 
       {/* Main Content */}
-      <main className="relative z-10">
+      <main className="relative z-10 pt-[420px]">
         <Hero />
         <ReservationBox />
         <AboutSection />

@@ -33,10 +33,10 @@ export function OrderSection() {
   return (
     <section id="order" className="px-4 md:px-6 py-16">
       <div className="max-w-3xl mx-auto">
-        <h2 className="font-serif text-2xl md:text-3xl text-foreground text-center mb-12 tracking-wide italic">
+        <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12 tracking-wide">
           Commander
         </h2>
-        <div className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl p-8 shadow-lg">
+        <div className="bg-white/10 border border-white/20 rounded-2xl p-8 shadow-lg">
           <h3 className="text-xl text-foreground mb-6 text-center font-medium">
             Sélectionnez vos pâtisseries
           </h3>

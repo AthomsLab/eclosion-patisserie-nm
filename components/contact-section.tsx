@@ -21,12 +21,12 @@ export function ContactSection() {
   return (
     <section id="contact" className="px-4 md:px-6 py-16">
       <div className="max-w-4xl mx-auto">
-        <h2 className="font-serif text-2xl md:text-3xl text-foreground text-center mb-12 tracking-wide italic">
+        <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12 tracking-wide">
           Contact
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {/* Contact Info */}
-          <div className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl p-8 shadow-lg">
+          <div className="bg-white/10 border border-white/20 rounded-2xl p-8 shadow-lg">
             <h3 className="text-xl text-foreground mb-6 font-medium">Nous contacter</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-foreground">
@@ -45,7 +45,7 @@ export function ContactSection() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl p-8 shadow-lg">
+          <div className="bg-white/10 border border-white/20 rounded-2xl p-8 shadow-lg">
             <h3 className="text-xl text-foreground mb-6 font-medium">Envoyez-nous un message</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <input
