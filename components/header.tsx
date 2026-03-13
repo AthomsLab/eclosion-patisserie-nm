@@ -22,8 +22,13 @@ export function Header() {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-40 bg-transparent">
-      <nav className="max-w-6xl mx-auto px-6 py-4">
+    <header className="fixed top-[30px] left-0 right-0 z-40 bg-transparent">
+      <nav 
+        className="max-w-6xl mx-auto px-6 py-4"
+        style={{
+          boxShadow: "0 -8px 16px -8px rgba(147, 122, 105, 0.15), 0 8px 16px -8px rgba(147, 122, 105, 0.15)",
+        }}
+      >
         <div className="flex items-center justify-between">
           {/* Desktop Navigation - Left */}
           <div className="hidden md:flex items-center gap-8">

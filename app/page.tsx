@@ -26,21 +26,18 @@ export default function Home() {
       {/* Fixed Logo - Always visible, overlapping header */}
       <FixedLogo />
 
-      {/* Gradient Mask at Top - Content fades under logo at ~450px */}
-      <div
-        className="fixed top-0 left-0 right-0 z-30 pointer-events-none"
-        style={{
-          height: "450px",
-          background:
-            "linear-gradient(to bottom, rgba(250, 246, 243, 1) 0%, rgba(250, 246, 243, 0.98) 70%, rgba(250, 246, 243, 0.9) 85%, rgba(250, 246, 243, 0) 100%)",
-        }}
-      />
-
       {/* Header */}
       <Header />
 
-      {/* Main Content */}
-      <main className="relative z-10 pt-[420px]">
+      {/* Main Content - clipped at top so content disappears under logo */}
+      <main 
+        className="relative z-10 pt-[320px]"
+        style={{
+          clipPath: "inset(350px 0 0 0)",
+          marginTop: "-350px",
+          paddingTop: "670px",
+        }}
+      >
         <Hero />
         <ReservationBox />
         <AboutSection />
