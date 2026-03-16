@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
-import { Tangerine, Playfair_Display } from 'next/font/google'
+import { Meie_Script, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const tangerine = Tangerine({ 
-  weight: ['400', '700'],
+const meieScript = Meie_Script({ 
+  weight: '400',
   subsets: ['latin'],
-  variable: '--font-tangerine',
+  variable: '--font-meie-script',
 })
 
 const playfair = Playfair_Display({ 
@@ -44,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="fr" className={`${tangerine.variable} ${playfair.variable}`}>
+    <html lang="fr" className={`${meieScript.variable} ${playfair.variable}`}>
       <body className="font-sans antialiased">
         {children}
         <Analytics />
