@@ -21,6 +21,8 @@ export default function Home() {
           backgroundPosition: "top left",
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
+          minHeight: "100vh",
+          minWidth: "100vw",
         }}
       />
 
