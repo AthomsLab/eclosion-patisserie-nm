@@ -1,6 +1,6 @@
 export function AboutSection() {
   return (
-    <section id="about" className="px-4 md:px-6 py-16">
+    <section id="about" className="px-4 md:px-6 py-24 md:py-32">
       <div className="max-w-3xl mx-auto">
         <div className="bg-white/10 border border-white/20 rounded-2xl p-8 md:p-12 shadow-lg text-center">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6 tracking-wide">

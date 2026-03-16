@@ -31,7 +31,7 @@ export function OrderSection() {
   }
 
   return (
-    <section id="order" className="px-4 md:px-6 py-16">
+    <section id="order" className="px-4 md:px-6 py-24 md:py-32">
       <div className="max-w-3xl mx-auto">
         <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12 tracking-wide">
           Commander
@@ -45,9 +45,9 @@ export function OrderSection() {
               <button
                 key={product.id}
                 onClick={() => toggleProduct(product.id)}
-                className={`flex items-center justify-between p-4 rounded-xl transition-all ${
+                className={`flex items-center justify-between p-4 rounded-xl btn-date ${
                   selectedProducts.includes(product.id)
-                    ? "bg-[#b89a6a] text-white"
+                    ? "bg-button text-white"
                     : "bg-white/30 text-foreground hover:bg-white/50"
                 }`}
               >
@@ -60,7 +60,7 @@ export function OrderSection() {
             <button
               onClick={handleOrder}
               disabled={selectedProducts.length === 0}
-              className="bg-[#b89a6a] text-white px-10 py-3 rounded-full text-sm tracking-wide hover:bg-primary transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="btn-lg disabled:opacity-50 disabled:cursor-not-allowed"
             >
               Valider la commande
             </button>

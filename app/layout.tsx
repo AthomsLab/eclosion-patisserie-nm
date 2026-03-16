@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
-import { Tangerine, Playfair_Display } from 'next/font/google'
+import { Fleur_De_Leah, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const tangerine = Tangerine({ 
-  weight: ['400', '700'],
+const fleurDeLeah = Fleur_De_Leah({ 
+  weight: '400',
   subsets: ['latin'],
-  variable: '--font-tangerine',
+  variable: '--font-fleur-de-leah',
 })
 
 const playfair = Playfair_Display({ 
@@ -44,8 +44,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="fr" className={`${tangerine.variable} ${playfair.variable}`}>
-      <body className="font-sans antialiased">
+    <html lang="fr" className={`${fleurDeLeah.variable} ${playfair.variable}`}>
+      <body className="font-sans antialiased m-0 p-0 w-screen overflow-x-hidden">
         {children}
         <Analytics />
       </body>

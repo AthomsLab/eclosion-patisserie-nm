@@ -22,9 +22,9 @@ export function Header() {
   }
 
   return (
-    <header className="fixed top-[30px] left-0 right-0 z-40 bg-transparent">
+    <header className="relative z-40 bg-transparent">
       <nav 
-        className="max-w-6xl mx-auto px-6 py-4"
+        className="fixed top-[30px] left-0 right-0 max-w-6xl mx-auto px-6 py-4"
         style={{
           boxShadow: "0 -8px 16px -8px rgba(147, 122, 105, 0.15), 0 8px 16px -8px rgba(147, 122, 105, 0.15)",
         }}
@@ -53,7 +53,7 @@ export function Header() {
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className="bg-[#b89a6a] text-white px-6 py-2 rounded-full text-sm tracking-wide hover:bg-primary transition-colors"
+                  className="btn-primary"
                 >
                   {item.label}
                 </button>
@@ -88,7 +88,7 @@ export function Header() {
                   <button
                     key={item.href}
                     onClick={() => scrollToSection(item.href)}
-                    className="bg-[#b89a6a] text-white px-6 py-2 rounded-full text-sm tracking-wide hover:bg-primary transition-colors w-fit"
+                    className="btn-primary w-fit"
                   >
                     {item.label}
                   </button>

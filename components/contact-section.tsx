@@ -19,7 +19,7 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="px-4 md:px-6 py-16">
+    <section id="contact" className="px-4 md:px-6 py-24 md:py-32">
       <div className="max-w-4xl mx-auto">
         <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12 tracking-wide">
           Contact
@@ -74,7 +74,7 @@ export function ContactSection() {
               />
               <button
                 type="submit"
-                className="w-full bg-[#b89a6a] text-white py-3 rounded-full text-sm tracking-wide hover:bg-primary transition-colors"
+                className="w-full btn-primary"
               >
                 Envoyer
               </button>

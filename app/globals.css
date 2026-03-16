@@ -23,6 +23,8 @@
   --border: rgba(255,255,255,0.4);
   --input: rgba(255,255,255,0.5);
   --ring: #d3b18f;
+  --button: #9f8862;
+  --button-hover: #d3b18f;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -76,7 +78,7 @@
 
 @theme inline {
   --font-sans: var(--font-playfair), 'Playfair Display', serif;
-  --font-serif: var(--font-tangerine), 'Tangerine', cursive;
+  --font-serif: var(--font-fleur-de-leah), 'Fleur De Leah', cursive;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -97,6 +99,8 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-button: var(--button);
+  --color-button-hover: var(--button-hover);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -122,5 +126,32 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .bg-button {
+    @apply bg-[#9f8862];
+  }
+  
+  .hover\:bg-button-hover:hover {
+    @apply bg-[#d3b18f];
+  }
+
+  .btn-primary {
+    @apply bg-[#9f8862] text-white px-6 py-2 rounded-full text-sm tracking-wide transition-colors cursor-pointer hover:bg-[#d3b18f];
+  }
+
+  .btn-lg {
+    @apply bg-[#9f8862] text-white px-10 py-2 rounded-full text-sm tracking-wide transition-colors cursor-pointer hover:bg-[#d3b18f];
+  }
+
+  .btn-date {
+    @apply cursor-pointer transition-all;
+  }
+
+  /* Sections with anchor scroll offset */
+  section {
+    @apply scroll-mt-[120px];
   }
 }
