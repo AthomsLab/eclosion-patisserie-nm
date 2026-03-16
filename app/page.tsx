@@ -11,15 +11,16 @@ import { FixedLogo } from "@/components/fixed-logo"
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen w-screen overflow-x-hidden">
       {/* Background Image */}
       <div
-        className="fixed inset-0 z-0"
+        className="fixed inset-0 z-0 w-full h-full"
         style={{
           backgroundImage: `url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/background-floral-rZ0bxxNZdQJzAHkiUJy2GuR2DIHe1q.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
         }}
       />
 
