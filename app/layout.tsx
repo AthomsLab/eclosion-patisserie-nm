@@ -45,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={`${fleurDeLeah.variable} ${playfair.variable}`}>
-      <body className="font-sans antialiased">
+      <body className="font-sans antialiased m-0 p-0 w-screen overflow-x-hidden">
         {children}
         <Analytics />
       </body>

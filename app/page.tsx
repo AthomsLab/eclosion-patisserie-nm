@@ -11,14 +11,14 @@ import { Footer } from "@/components/footer"
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen w-screen overflow-x-hidden">
+    <div className="relative min-h-screen w-screen">
       {/* Background Image */}
       <div
-        className="fixed inset-0 z-0 w-full h-full"
+        className="fixed inset-0 z-0 w-screen h-screen"
         style={{
           backgroundImage: `url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/background-floral-rZ0bxxNZdQJzAHkiUJy2GuR2DIHe1q.jpg')`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "top left",
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
         }}
