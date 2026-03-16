@@ -149,4 +149,9 @@
   .btn-date {
     @apply cursor-pointer transition-all;
   }
+
+  /* Sections with anchor scroll offset */
+  section {
+    @apply scroll-mt-[120px];
+  }
 }

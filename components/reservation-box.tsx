@@ -28,7 +28,7 @@ export function ReservationBox() {
   }
 
   return (
-    <section className="px-4 md:px-6 py-8">
+    <section className="px-4 md:px-6 py-12 md:py-16">
       <div className="max-w-xl mx-auto">
         <div className="bg-white/10 border border-white/20 rounded-2xl p-6 md:p-8 shadow-lg">
           <h2 className="font-serif text-foreground text-center text-2xl md:text-3xl mb-6 tracking-wide">

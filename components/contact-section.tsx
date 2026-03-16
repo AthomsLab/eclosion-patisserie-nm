@@ -19,7 +19,7 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="px-4 md:px-6 py-16">
+    <section id="contact" className="px-4 md:px-6 py-24 md:py-32">
       <div className="max-w-4xl mx-auto">
         <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12 tracking-wide">
           Contact
