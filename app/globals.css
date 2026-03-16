@@ -76,7 +76,7 @@
 
 @theme inline {
   --font-sans: var(--font-playfair), 'Playfair Display', serif;
-  --font-serif: var(--font-fleur-de-leah), 'Fleur de Leah', cursive;
+  --font-serif: var(--font-great-vibes), 'Great Vibes', cursive;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
   --color-background: var(--background);
   --color-foreground: var(--foreground);

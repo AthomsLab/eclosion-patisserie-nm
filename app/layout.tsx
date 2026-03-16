@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
-import { Fleur_de_Leah, Playfair_Display } from 'next/font/google'
+import { Great_Vibes, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const fleurDeLeah = Fleur_de_Leah({ 
+const greatVibes = Great_Vibes({ 
   weight: '400',
   subsets: ['latin'],
-  variable: '--font-fleur-de-leah',
+  variable: '--font-great-vibes',
 })
 
 const playfair = Playfair_Display({ 
@@ -44,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="fr" className={`${fleurDeLeah.variable} ${playfair.variable}`}>
+    <html lang="fr" className={`${greatVibes.variable} ${playfair.variable}`}>
       <body className="font-sans antialiased">
         {children}
         <Analytics />
