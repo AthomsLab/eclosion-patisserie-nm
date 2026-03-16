@@ -23,6 +23,8 @@
   --border: rgba(255,255,255,0.4);
   --input: rgba(255,255,255,0.5);
   --ring: #d3b18f;
+  --button: #9f8862;
+  --button-hover: #d3b18f;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -97,6 +99,8 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-button: var(--button);
+  --color-button-hover: var(--button-hover);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);

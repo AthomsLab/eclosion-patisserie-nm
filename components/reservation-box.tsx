@@ -43,7 +43,7 @@ export function ReservationBox() {
                 onClick={() => setSelectedDate(index)}
                 className={`flex flex-col items-center justify-center w-12 h-14 md:w-14 md:h-16 rounded-lg transition-all ${
                   selectedDate === index
-                    ? "bg-[#b89a6a] text-white"
+                    ? "bg-button text-white"
                     : "bg-white/30 text-foreground hover:bg-white/50"
                 }`}
               >
@@ -61,7 +61,7 @@ export function ReservationBox() {
                 onClick={() => setSelectedTime(time)}
                 className={`px-4 py-2 rounded-lg text-sm transition-all ${
                   selectedTime === time
-                    ? "bg-[#b89a6a] text-white"
+                    ? "bg-button text-white"
                     : "bg-white/30 text-foreground hover:bg-white/50"
                 }`}
               >
@@ -74,7 +74,7 @@ export function ReservationBox() {
           <div className="flex justify-center">
             <button
               onClick={handleValidate}
-              className="bg-[#b89a6a] text-white px-10 py-3 rounded-full text-sm tracking-wide hover:bg-primary transition-colors"
+              className="bg-button text-white px-10 py-3 rounded-full text-sm tracking-wide hover:bg-button-hover transition-colors"
             >
               Valider
             </button>
@@ -94,7 +94,7 @@ export function ReservationBox() {
           <p className="font-serif text-foreground text-2xl md:text-3xl mb-4 tracking-wide">
             Commandes exclusivement sur réservation
           </p>
-          <button className="bg-[#b89a6a] text-white px-8 py-3 rounded-full text-sm tracking-wide hover:bg-primary transition-colors">
+          <button className="bg-button text-white px-8 py-3 rounded-full text-sm tracking-wide hover:bg-button-hover transition-colors">
             En savoir plus
           </button>
         </div>

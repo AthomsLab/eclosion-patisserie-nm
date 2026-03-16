@@ -47,7 +47,7 @@ export function OrderSection() {
                 onClick={() => toggleProduct(product.id)}
                 className={`flex items-center justify-between p-4 rounded-xl transition-all ${
                   selectedProducts.includes(product.id)
-                    ? "bg-[#b89a6a] text-white"
+                    ? "bg-button text-white"
                     : "bg-white/30 text-foreground hover:bg-white/50"
                 }`}
               >
@@ -60,7 +60,7 @@ export function OrderSection() {
             <button
               onClick={handleOrder}
               disabled={selectedProducts.length === 0}
-              className="bg-[#b89a6a] text-white px-10 py-3 rounded-full text-sm tracking-wide hover:bg-primary transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="bg-button text-white px-10 py-3 rounded-full text-sm tracking-wide hover:bg-button-hover transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               Valider la commande
             </button>
