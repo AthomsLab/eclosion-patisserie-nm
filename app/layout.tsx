@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
-import { Meie_Script, Playfair_Display } from 'next/font/google'
+import { Fleur_de_Leah, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const meieScript = Meie_Script({ 
+const fleurDeLeah = Fleur_de_Leah({ 
   weight: '400',
   subsets: ['latin'],
-  variable: '--font-meie-script',
+  variable: '--font-fleur-de-leah',
 })
 
 const playfair = Playfair_Display({ 
@@ -44,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="fr" className={`${meieScript.variable} ${playfair.variable}`}>
+    <html lang="fr" className={`${fleurDeLeah.variable} ${playfair.variable}`}>
       <body className="font-sans antialiased">
         {children}
         <Analytics />
