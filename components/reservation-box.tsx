@@ -41,10 +41,10 @@ export function ReservationBox() {
               <button
                 key={index}
                 onClick={() => setSelectedDate(index)}
-                className={`flex flex-col items-center justify-center w-12 h-14 md:w-14 md:h-16 rounded-lg transition-all ${
+                className={`flex flex-col items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-lg btn-date ${
                   selectedDate === index
                     ? "bg-button text-white"
-                    : "bg-white/30 text-foreground hover:bg-white/50"
+                    : "bg-white/10 text-foreground hover:bg-white/30"
                 }`}
               >
                 <span className="text-xs">{item.day}</span>
@@ -59,11 +59,10 @@ export function ReservationBox() {
               <button
                 key={time}
                 onClick={() => setSelectedTime(time)}
-                className={`px-4 py-2 rounded-lg text-sm transition-all ${
-                  selectedTime === time
+                className={`px-4 py-2 rounded-lg text-sm transition-all ${selectedTime === time
                     ? "bg-button text-white"
                     : "bg-white/30 text-foreground hover:bg-white/50"
-                }`}
+                  }`}
               >
                 {time}
               </button>
@@ -74,7 +73,7 @@ export function ReservationBox() {
           <div className="flex justify-center">
             <button
               onClick={handleValidate}
-              className="bg-button text-white px-10 py-3 rounded-full text-sm tracking-wide hover:bg-button-hover transition-colors"
+              className="btn-lg"
             >
               Valider
             </button>
@@ -94,7 +93,7 @@ export function ReservationBox() {
           <p className="font-serif text-foreground text-2xl md:text-3xl mb-4 tracking-wide">
             Commandes exclusivement sur réservation
           </p>
-          <button className="bg-button text-white px-8 py-3 rounded-full text-sm tracking-wide hover:bg-button-hover transition-colors">
+          <button className="btn-lg">
             En savoir plus
           </button>
         </div>

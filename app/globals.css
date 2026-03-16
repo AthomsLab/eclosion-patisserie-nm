@@ -137,4 +137,16 @@
   .hover\:bg-button-hover:hover {
     @apply bg-[#d3b18f];
   }
+
+  .btn-primary {
+    @apply bg-button text-white px-6 py-2 rounded-full text-sm tracking-wide hover:bg-button-hover transition-colors cursor-pointer;
+  }
+
+  .btn-lg {
+    @apply bg-button text-white px-10 py-2 rounded-full text-sm tracking-wide hover:bg-button-hover transition-colors cursor-pointer;
+  }
+
+  .btn-date {
+    @apply cursor-pointer transition-all;
+  }
 }
