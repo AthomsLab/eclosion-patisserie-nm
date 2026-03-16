@@ -1,4 +1,5 @@
 import { Header } from "@/components/header"
+import { ScrollingLogo } from "@/components/fixed-logo"
 import { Hero } from "@/components/hero"
 import { ReservationBox } from "@/components/reservation-box"
 import { AboutSection } from "@/components/about-section"
@@ -7,7 +8,6 @@ import { ServicesSection } from "@/components/services-section"
 import { ContactSection } from "@/components/contact-section"
 import { OrderSection } from "@/components/order-section"
 import { Footer } from "@/components/footer"
-import { FixedLogo } from "@/components/fixed-logo"
 
 export default function Home() {
   return (
@@ -24,21 +24,14 @@ export default function Home() {
         }}
       />
 
-      {/* Fixed Logo - Always visible, overlapping header */}
-      <FixedLogo />
-
       {/* Header */}
       <Header />
 
-      {/* Main Content - clipped at top so content disappears under logo */}
-      <main 
-        className="relative z-10 pt-[320px]"
-        style={{
-          clipPath: "inset(350px 0 0 0)",
-          marginTop: "-350px",
-          paddingTop: "670px",
-        }}
-      >
+      {/* Main Content */}
+      <main className="relative z-10 pt-[80px]">
+        {/* Scrolling Logo - Part of content flow */}
+        <ScrollingLogo />
+        
         <Hero />
         <ReservationBox />
         <AboutSection />
