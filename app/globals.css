@@ -128,3 +128,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .bg-button {
+    @apply bg-[#9f8862];
+  }
+  
+  .hover\:bg-button-hover:hover {
+    @apply bg-[#d3b18f];
+  }
+}
